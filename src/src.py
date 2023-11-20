@@ -106,6 +106,5 @@ def main():
     )
     analyze_frames_and_write_to_csv(encoded_frames, timestamps, headers, csv_file)
 
-
 if __name__ == "__main__":
     main()
