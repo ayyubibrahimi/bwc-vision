@@ -1,7 +1,7 @@
-# Body-Worn Camera Footage Analysis
+# The Reinvestigation Workgroup - Body-Worn Camera Footage Analysis
 
 ## Overview
-This project supports the Communities United Against Police Brutality's Reinvestigation Workgroup by analyzing body-worn camera footage from officer-involved shootings. Our goal is to provide transparent, data-driven insights to aid in community advocacy and policy reform.
+This project supports the Reinvestigation Workgroup by analyzing body-worn camera footage from officer-involved shootings. Our goal is to provide transparent, data-driven insights to aid in community advocacy and policy reform.
 
 ## Objectives
 - **Reinvestigation**: Critically examine footage from officer-involved shootings.
