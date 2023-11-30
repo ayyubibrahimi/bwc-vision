@@ -4,6 +4,10 @@ import os
 import csv
 from langchain.chat_models import ChatOpenAI
 from langchain.schema.messages import HumanMessage
+from dotenv import find_dotenv, load_dotenv
+
+load_dotenv(find_dotenv())
+
 
 
 def encode_frame(frame):
@@ -13,7 +17,7 @@ def encode_frame(frame):
 
 def frame_summarize(frame_base64, prompt):
     """Summarize a video frame"""
-    chat = ChatOpenAI(model="gpt-4-vision-preview", max_tokens=1024, api_key="")
+    chat = ChatOpenAI(model="gpt-4-vision-preview", max_tokens=1024)
     msg = chat.invoke(
         [
             HumanMessage(

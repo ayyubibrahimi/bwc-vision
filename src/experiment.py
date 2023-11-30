@@ -5,6 +5,10 @@ import csv
 from datetime import timedelta
 from langchain.chat_models import ChatOpenAI
 from langchain.schema.messages import HumanMessage
+from dotenv import find_dotenv, load_dotenv
+
+load_dotenv(find_dotenv())
+
 
 def encode_frame(frame):
     """Encode a video frame to base64"""
@@ -13,7 +17,7 @@ def encode_frame(frame):
 
 def analyze_interaction(frame_base64, prompt):
     """Analyze a video frame for interaction"""
-    chat = ChatOpenAI(model="gpt-4-vision-preview", max_tokens=1024, api_key="")
+    chat = ChatOpenAI(model="gpt-4-vision-preview", max_tokens=1024)
     msg = chat.invoke(
         [
             HumanMessage(
