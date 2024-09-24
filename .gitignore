@@ -4,3 +4,4 @@ __pycache__
 *.jpg
 *.env
 *.DS_Store
+archive/
